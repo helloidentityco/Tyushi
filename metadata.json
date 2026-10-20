@@ -1,0 +1,6 @@
+{
+  "name": "Kawish & Mooi | Luxury Genuine Leather Goods",
+  "description": "Artisan luxury genuine leather collections featuring Kawish (Premium) and Mooi (General) handcrafted leather bags, totes, and purses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #100C09;
+    --bg-secondary: #18120E;
+    --surface-elevated: #211811;
+    --card-product: #251B14;
+    --text-primary: #F7F0E6;
+    --text-secondary: #BDAE9D;
+    --text-muted: #8E7D6C;
+    --gold-primary: #C6A15B;
+    --gold-light: #E0BF78;
+    --cognac: #A66E38;
+    --dark-walnut: #3B281C;
+    --border-luxury: #3A2B20;
+    --hover-bg: #302217;
+    --status-success: #6FC69B;
+    --status-warning: #E2B765;
+    --status-error: #E58A82;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-poppins), system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(ellipse at 50% 0%, rgba(198, 161, 91, 0.04) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 50%, rgba(166, 110, 56, 0.03) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 80%, rgba(59, 40, 28, 0.15) 0%, transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom Luxury Gradients & Textures */
+.bg-walnut-gradient {
+  /* background: linear-gradient(180deg, #18120E 0%, #100C09 100%); */
+}
+
+.bg-walnut-card {
+  background-color: #251B14;
+  border: 1px solid #3A2B20;
+}
+
+.bg-walnut-elevated {
+  background-color: #211811;
+  border: 1px solid #3A2B20;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E0BF78 0%, #C6A15B 60%, #9F7B34 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(198, 161, 91, 0.3);
+}
+
+.shadow-gold-subtle {
+  box-shadow: 0 4px 20px -2px rgba(198, 161, 91, 0.08);
+}
+
+.font-editorial {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom Scrollbar for luxury theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #100C09;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B281C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A15B;
+}
